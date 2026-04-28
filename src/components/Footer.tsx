@@ -25,13 +25,23 @@ export default function Footer() {
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               Настоящая грузинская кухня в сердце Оренбурга. Хинкали, хачапури и традиционные блюда каждый день.
             </p>
-            <a
-              href="tel:+79068447977"
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-[hsl(var(--georgian-red))] text-white text-sm font-bold rounded-full hover:bg-[hsl(8,85%,40%)] transition"
-            >
-              <Icon name="Phone" size={14} />
-              +7 (906) 844-79-77
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="tel:+79068447977"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-[hsl(var(--georgian-red))] text-white text-sm font-bold rounded-full hover:bg-[hsl(8,85%,40%)] transition"
+              >
+                <Icon name="Phone" size={14} />
+                +7 (906) 844-79-77
+              </a>
+              <a
+                href="/presentation"
+                target="_blank"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-[hsl(var(--georgian-gold))] text-[hsl(var(--georgian-dark))] text-sm font-bold rounded-full hover:brightness-110 transition"
+              >
+                <Icon name="FileText" size={14} />
+                Презентация
+              </a>
+            </div>
           </div>
 
           {/* Navigation */}

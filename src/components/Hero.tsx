@@ -61,6 +61,14 @@ export default function Hero() {
               <Icon name="Phone" size={18} />
               Позвонить
             </a>
+            <a
+              href="/presentation"
+              target="_blank"
+              className="flex items-center gap-2 px-7 py-4 bg-[hsl(var(--georgian-gold))] text-[hsl(var(--georgian-dark))] font-bold text-base rounded-full hover:brightness-110 transition-all shadow-lg"
+            >
+              <Icon name="FileText" size={18} />
+              Презентация
+            </a>
           </div>
 
           <div className="flex flex-wrap gap-6">
