@@ -1,10 +1,11 @@
-const INTERIOR_IMG = "https://cdn.poehali.dev/projects/95dfc6f8-1632-40a1-80b7-f7d095d6a45a/files/29086155-bb93-45c7-b62a-737910111505.jpg";
+const GIRL1 = "https://cdn.poehali.dev/projects/95dfc6f8-1632-40a1-80b7-f7d095d6a45a/files/8a17ef13-2526-411a-b799-5cc44ee1fa92.jpg";
+const GIRLS3 = "https://cdn.poehali.dev/projects/95dfc6f8-1632-40a1-80b7-f7d095d6a45a/files/6bf4e04a-d57f-4229-9f9a-f1ee0c2bc9fd.jpg";
 
 const values = [
-  { emoji: "🫕", title: "Традиционные рецепты", desc: "Готовим по рецептам, передававшимся из поколения в поколение в семьях Тбилиси и Кутаиси" },
-  { emoji: "🌿", title: "Свежие продукты", desc: "Ежедневная закупка свежих овощей, мяса и зелени у проверенных поставщиков" },
-  { emoji: "⚡", title: "Быстро и вкусно", desc: "Формат фаст-фуда без компромиссов по качеству — ваш заказ готов за 7–10 минут" },
-  { emoji: "❤️", title: "С душой", desc: "Каждое блюдо готовится с любовью и уважением к грузинской культуре" },
+  { emoji: "🫕", title: "Семейные рецепты", desc: "Блюда по рецептам из Тбилиси, проверенным поколениями" },
+  { emoji: "🌿", title: "Свежие продукты", desc: "Ежедневная закупка мяса, зелени и специй" },
+  { emoji: "⚡", title: "Быстро и вкусно", desc: "Ваш заказ готов за 7–10 минут — без ущерба качеству" },
+  { emoji: "🏔", title: "Дух Кавказа", desc: "Живая атмосфера Грузии в каждой детали ресторана" },
 ];
 
 export default function About() {
@@ -12,51 +13,53 @@ export default function About() {
     <section id="about" className="py-20 bg-[hsl(35,30%,96%)]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image side */}
-          <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img src={INTERIOR_IMG} alt="Ресторан Мтацминда" className="w-full h-96 lg:h-[500px] object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-[hsl(var(--georgian-red)/0.3)] to-transparent" />
+          {/* Image collage */}
+          <div className="relative h-[480px]">
+            {/* Main big image */}
+            <div className="absolute left-0 top-0 w-[60%] h-[75%] rounded-3xl overflow-hidden shadow-2xl border-2 border-[hsl(var(--georgian-gold)/0.4)]">
+              <img src={GIRLS3} alt="Грузинские девушки в таразе" className="w-full h-full object-cover object-top" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--georgian-red)/0.25)] to-transparent" />
+            </div>
+            {/* Secondary image */}
+            <div className="absolute right-0 top-10 w-[44%] h-[65%] rounded-3xl overflow-hidden shadow-xl border-2 border-[hsl(var(--georgian-gold)/0.3)]">
+              <img src={GIRL1} alt="Традиционный тараз" className="w-full h-full object-cover object-top" />
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-[hsl(var(--georgian-red))] flex items-center justify-center text-2xl">
-                🇬🇪
-              </div>
+            <div className="absolute left-4 bottom-0 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 border border-[hsl(var(--georgian-gold)/0.3)]">
+              <div className="text-3xl">🇬🇪</div>
               <div>
-                <div className="font-black text-2xl text-[hsl(var(--georgian-red))]">15+</div>
-                <div className="text-muted-foreground text-sm">лет традиций</div>
+                <div className="font-black text-[hsl(var(--georgian-red))] text-lg leading-tight">Оренпарк</div>
+                <div className="text-muted-foreground text-xs">2 этаж · фуд-корт</div>
               </div>
             </div>
-            {/* Ornament border */}
-            <div className="absolute -top-3 -left-3 w-24 h-24 border-t-4 border-l-4 border-[hsl(var(--georgian-gold))] rounded-tl-2xl pointer-events-none" />
-            <div className="absolute -bottom-3 -right-3 w-24 h-24 border-b-4 border-r-4 border-[hsl(var(--georgian-gold))] rounded-br-2xl pointer-events-none" />
+            {/* Gold corner ornaments */}
+            <div className="absolute -top-2 -left-2 w-16 h-16 border-t-3 border-l-3 border-[hsl(var(--georgian-gold))] rounded-tl-2xl pointer-events-none" style={{ borderWidth: 3 }} />
+            <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-3 border-r-3 border-[hsl(var(--georgian-gold))] rounded-br-2xl pointer-events-none" style={{ borderWidth: 3 }} />
           </div>
 
-          {/* Text side */}
+          {/* Text */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[hsl(var(--georgian-red)/0.1)] text-[hsl(var(--georgian-red))] rounded-full text-sm font-semibold mb-6">
               <span>🏔</span>
-              О нас
+              О ресторане
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6" style={{ fontFamily: "Playfair Display, serif" }}>
               История
-              <span className="block text-gradient">Мтацминды</span>
+              <span className="block text-gradient">«Арагви»</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              «Мтацминда» — это не просто точка в фуд-корте. Это кусочек Грузии в вашем городе.
-              Мы открылись в 2009 году с одной миссией: дать людям возможность попробовать настоящую
-              грузинскую кухню — быстро, вкусно и по доступной цене.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              «Арагви» — это ресторан грузинской кухни в фуд-корте ТРЦ Оренпарк.
+              Мы открылись с одной мечтой: подарить жителям Оренбурга настоящий вкус Кавказа.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Наши повара — выходцы из Тбилиси и Батуми. Каждый рецепт проверен временем.
-              Хинкали лепятся вручную, тесто для хачапури готовится каждое утро. Это наша гордость.
+              Наше название — в честь горной реки Арагви, воспетой Пушкиным и Лермонтовым.
+              Как эта река несёт чистую воду с гор, мы несём вам живые традиции грузинской кухни:
+              хинкали лепятся вручную, хачапури выпекается каждое утро.
             </p>
 
-            {/* Values grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {values.map((v) => (
-                <div key={v.title} className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div key={v.title} className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-border/50">
                   <span className="text-2xl mt-0.5">{v.emoji}</span>
                   <div>
                     <div className="font-bold text-foreground text-sm mb-1">{v.title}</div>

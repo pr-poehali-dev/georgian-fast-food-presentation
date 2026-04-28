@@ -8,9 +8,9 @@ const steps = [
 ];
 
 const zones = [
-  { name: "Центр города", time: "30 мин", price: "Бесплатно от 800 ₽" },
-  { name: "Спальные районы", time: "40–50 мин", price: "Бесплатно от 1200 ₽" },
-  { name: "Пригород", time: "60–70 мин", price: "от 150 ₽" },
+  { name: "Центральный район", time: "30 мин", price: "Бесплатно от 800 ₽" },
+  { name: "Дзержинский, Промышленный", time: "40–50 мин", price: "Бесплатно от 1200 ₽" },
+  { name: "Степной, Южный Урал", time: "50–60 мин", price: "от 150 ₽" },
 ];
 
 export default function Delivery() {
@@ -90,14 +90,14 @@ export default function Delivery() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href="tel:+78001234567"
+                href="tel:+79068447977"
                 className="flex items-center justify-center gap-3 px-6 py-4 bg-white text-[hsl(var(--georgian-red))] font-bold rounded-2xl hover:bg-white/90 transition shadow-md text-lg"
               >
                 <Icon name="Phone" size={20} />
-                8 800 123-45-67
+                +7 (906) 844-79-77
               </a>
               <a
-                href="https://wa.me/78001234567"
+                href="https://wa.me/79068447977"
                 className="flex items-center justify-center gap-3 px-6 py-4 bg-white/15 text-white font-semibold rounded-2xl hover:bg-white/25 transition border border-white/30"
               >
                 <Icon name="MessageCircle" size={20} />

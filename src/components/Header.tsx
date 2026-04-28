@@ -7,7 +7,6 @@ const navItems = [
   { label: "Акции", href: "#promotions" },
   { label: "Галерея", href: "#gallery" },
   { label: "О нас", href: "#about" },
-  { label: "Доставка", href: "#delivery" },
   { label: "Контакты", href: "#contacts" },
 ];
 
@@ -21,27 +20,24 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-md border-b-4 border-[hsl(var(--georgian-red))]">
-      {/* Ornament strip */}
-      <div className="h-1 bg-gradient-to-r from-[hsl(var(--georgian-red))] via-[hsl(var(--georgian-gold))] to-[hsl(var(--georgian-green))]" />
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-md">
+      <div className="h-1.5 bg-gradient-to-r from-[hsl(var(--georgian-red))] via-[hsl(var(--georgian-gold))] to-[hsl(var(--georgian-green))]" />
 
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
         <button onClick={() => handleNav("#home")} className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full bg-[hsl(var(--georgian-red))] flex items-center justify-center text-white text-2xl font-bold shadow-lg">
-            🍽
+          <div className="w-11 h-11 rounded-full bg-[hsl(var(--georgian-red))] flex items-center justify-center text-white text-xl font-bold shadow-lg">
+            🇬🇪
           </div>
           <div className="text-left">
-            <div className="text-xl font-bold text-[hsl(var(--georgian-red))]" style={{ fontFamily: "Playfair Display, serif" }}>
-              Мтацминда
+            <div className="text-xl font-black text-[hsl(var(--georgian-red))]" style={{ fontFamily: "Playfair Display, serif" }}>
+              Арагви
             </div>
-            <div className="text-xs text-[hsl(var(--muted-foreground))] tracking-widest uppercase">
-              Грузинский фаст-фуд
+            <div className="text-[10px] text-muted-foreground tracking-widest uppercase">
+              Грузинский ресторан · Оренпарк
             </div>
           </div>
         </button>
 
-        {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
             <button
@@ -54,15 +50,14 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA + burger */}
         <div className="flex items-center gap-3">
-          <button
-            onClick={() => handleNav("#delivery")}
+          <a
+            href="tel:+79068447977"
             className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[hsl(var(--georgian-red))] text-white text-sm font-semibold rounded-full hover:bg-[hsl(8,85%,40%)] transition-all shadow-md"
           >
-            <Icon name="ShoppingBag" size={16} />
-            Заказать
-          </button>
+            <Icon name="Phone" size={15} />
+            Позвонить
+          </a>
           <button
             className="lg:hidden p-2 rounded-lg hover:bg-muted transition"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -72,7 +67,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="lg:hidden bg-white border-t border-border px-4 py-4 flex flex-col gap-1">
           {navItems.map((item) => (
@@ -84,12 +78,13 @@ export default function Header() {
               {item.label}
             </button>
           ))}
-          <button
-            onClick={() => handleNav("#delivery")}
-            className="mt-2 px-4 py-3 bg-[hsl(var(--georgian-red))] text-white font-semibold rounded-full text-center"
+          <a
+            href="tel:+79068447977"
+            className="mt-2 px-4 py-3 bg-[hsl(var(--georgian-red))] text-white font-semibold rounded-full text-center flex items-center justify-center gap-2"
           >
-            Заказать доставку
-          </button>
+            <Icon name="Phone" size={16} />
+            +7 (906) 844-79-77
+          </a>
         </div>
       )}
     </header>
