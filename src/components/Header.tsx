@@ -33,7 +33,7 @@ export default function Header() {
               Арагви
             </div>
             <div className="text-[10px] text-muted-foreground tracking-widest uppercase">
-              Грузинский ресторан · Оренпарк
+              Грузинский ресторан · Оренбург
             </div>
           </div>
         </button>

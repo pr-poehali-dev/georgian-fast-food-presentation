@@ -26,7 +26,7 @@ export default function Contacts() {
             Найдите <span className="text-gradient">нас</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Мы в фуд-корте ТРЦ Оренпарк, Оренбург — приходите, звоните, пишите!
+            Мы в Оренпарке, Оренбург — приходите, звоните, пишите!
           </p>
           <div className="flex items-center justify-center gap-2 mt-6">
             <div className="h-px flex-1 max-w-24 bg-gradient-to-r from-transparent to-[hsl(var(--georgian-gold))]" />
@@ -47,8 +47,8 @@ export default function Contacts() {
               </h3>
               <div className="space-y-3">
                 {[
-                  { icon: "Building2", label: "ТЦ", value: "ТРЦ Оренпарк, 2 этаж, фуд-корт" },
-                  { icon: "MapPin", label: "Адрес", value: "г. Оренбург, Оренпарк" },
+                  { icon: "Building2", label: "Место", value: "Оренпарк" },
+                  { icon: "MapPin", label: "Адрес", value: "г. Оренбург" },
                   { icon: "Clock", label: "Режим", value: "Пн–Вс: 10:00 – 22:00" },
                   { icon: "Phone", label: "Телефон", value: "+7 (906) 844-79-77" },
                 ].map((info) => (

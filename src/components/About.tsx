@@ -29,7 +29,7 @@ export default function About() {
               <div className="text-3xl">🇬🇪</div>
               <div>
                 <div className="font-black text-[hsl(var(--georgian-red))] text-lg leading-tight">Оренпарк</div>
-                <div className="text-muted-foreground text-xs">2 этаж · фуд-корт</div>
+                <div className="text-muted-foreground text-xs">Оренбург</div>
               </div>
             </div>
             {/* Gold corner ornaments */}

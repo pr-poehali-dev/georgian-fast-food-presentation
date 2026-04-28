@@ -30,7 +30,7 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[hsl(var(--georgian-gold))] text-[hsl(var(--georgian-dark))] rounded-full text-sm font-bold mb-6 shadow-lg">
             <span>🇬🇪</span>
-            <span>Фуд-корт ТРЦ Оренпарк · Оренбург</span>
+            <span>Оренпарк · Оренбург</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6" style={{ fontFamily: "Playfair Display, serif" }}>
@@ -65,7 +65,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-6">
             {[
-              { icon: "MapPin", value: "Оренпарк", label: "2 этаж, фуд-корт" },
+              { icon: "MapPin", value: "Оренпарк", label: "Оренбург" },
               { icon: "Clock", value: "10:00–22:00", label: "Ежедневно" },
               { icon: "Star", value: "4.9 ★", label: "Рейтинг" },
             ].map((stat) => (
