@@ -40,8 +40,8 @@ const advantages = [
   },
   {
     icon: "🤝",
-    title: "Надёжный партнёр",
-    desc: "Опыт работы с 2022 года. Все санитарные нормы, чёткий операционный процесс, стабильная команда поваров.",
+    title: "Серьёзный подход",
+    desc: "Чёткий операционный план, готовая команда поваров, соблюдение всех санитарных норм с первого дня работы.",
   },
 ];
 
@@ -92,17 +92,17 @@ export default function Presentation() {
             </p>
 
             <p className="text-white/70 text-base leading-relaxed mb-10 max-w-lg">
-              Мы хотим стать частью фуд-корта Оренпарка. В этой презентации —
-              наша концепция, меню, опыт и то, какую ценность мы принесём
-              вашим гостям и вашему проекту.
+              Мы открываем новое заведение грузинской кухни специально для фуд-корта Оренпарка.
+              В этой презентации — наша концепция, меню и то, какую ценность
+              мы принесём вашим гостям и вашему проекту.
             </p>
 
             <div className="flex flex-wrap gap-8">
               {[
-                { value: "3+", label: "года опыта" },
+                { value: "Новое", label: "заведение" },
                 { value: "680 ₽", label: "средний чек" },
-                { value: "4.9 ★", label: "рейтинг" },
-                { value: "320+", label: "гостей в день" },
+                { value: "10 мин", label: "время готовки" },
+                { value: "0 ₽", label: "полуфабрикатов" },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="text-3xl font-black" style={{ color: "#D4A017", fontFamily: "Playfair Display, serif" }}>{s.value}</div>
@@ -150,7 +150,7 @@ export default function Presentation() {
 
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: "Работаем с", value: "2022 года" },
+                  { label: "Открытие", value: "2025 год" },
                   { label: "Кухня", value: "Грузинская" },
                   { label: "Формат", value: "Фуд-корт / QSR" },
                   { label: "Режим работы", value: "Ежедн. 10–22" },
@@ -252,19 +252,19 @@ export default function Presentation() {
         style={{ background: "linear-gradient(135deg, #1c0909 0%, #2d1212 50%, #1c1809 100%)" }}>
         <div className="max-w-6xl mx-auto w-full flex-1 flex flex-col justify-center">
           <div className="mb-10">
-            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "#D4A017" }}>04 / Результаты</div>
+            <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "#D4A017" }}>04 / Потенциал</div>
             <h2 className="text-5xl font-black text-white mb-3" style={{ fontFamily: "Playfair Display, serif" }}>
-              Наш опыт в цифрах
+              Наш прогноз
             </h2>
             <div className="h-1 w-16 rounded" style={{ background: "#C0392B" }} />
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
             {[
-              { value: "320+", label: "гостей в день", sub: "в среднем за месяц", color: "#D4A017" },
-              { value: "680 ₽", label: "средний чек", sub: "рост +12% за год", color: "#C0392B" },
-              { value: "4.9 ★", label: "рейтинг", sub: "Яндекс Карты, 2ГИС", color: "#27AE60" },
-              { value: "68%", label: "постоянных гостей", sub: "возвращаются снова", color: "#D4A017" },
+              { value: "300+", label: "гостей в день", sub: "прогноз на 3 месяц", color: "#D4A017" },
+              { value: "650 ₽", label: "средний чек", sub: "консервативная оценка", color: "#C0392B" },
+              { value: "7–10", label: "минут", sub: "время приготовления", color: "#27AE60" },
+              { value: "0", label: "полуфабрикатов", sub: "только свежее сырьё", color: "#D4A017" },
             ].map((s) => (
               <div key={s.label} className="rounded-2xl p-6 text-center"
                 style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}>
@@ -277,9 +277,9 @@ export default function Presentation() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
             {[
-              { icon: "🕐", title: "Пиковые часы", items: ["Обед: 12:00–15:00", "Ужин: 18:00–21:00", "Загрузка 85–95%"] },
-              { icon: "👥", title: "Наша аудитория", items: ["Семьи с детьми — 30%", "Молодёжь 20–35 лет — 45%", "Корпоративные — 25%"] },
-              { icon: "📣", title: "Маркетинг", items: ["Активные соцсети", "Доставка и самовывоз", "Программа лояльности"] },
+              { icon: "🕐", title: "Пиковые часы", items: ["Обед: 12:00–15:00", "Вечер: 17:00–21:00", "Выходные — максимум"] },
+              { icon: "👥", title: "Целевая аудитория", items: ["Семьи с детьми — 30%", "Молодёжь 20–35 лет — 45%", "Прогуливающиеся — 25%"] },
+              { icon: "📣", title: "Маркетинг с нуля", items: ["Запуск в соцсетях", "Акции открытия", "Доставка и самовывоз"] },
             ].map((block) => (
               <div key={block.title} className="rounded-2xl p-6"
                 style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -363,13 +363,13 @@ export default function Presentation() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
               <p className="text-white/75 text-xl leading-relaxed mb-4">
-                Мы готовы встретиться, показать нашу работу вживую
-                и ответить на любые вопросы — по концепции, операционным
-                процессам, финансовым показателям.
+                Мы готовы встретиться, представить концепцию вживую
+                и ответить на любые вопросы — по меню, команде,
+                оборудованию и плану запуска.
               </p>
               <p className="text-white/55 text-base leading-relaxed mb-10">
-                По запросу предоставим: санитарные заключения, финансовую отчётность,
-                портфолио, отзывы гостей и план запуска в новой точке.
+                По запросу предоставим: бизнес-план, план запуска,
+                описание оборудования и все необходимые документы.
               </p>
 
               <div className="space-y-6">
