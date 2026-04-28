@@ -10,6 +10,7 @@ const menu = [
   { name: "Лобиани", price: "280 ₽", emoji: "🫔" },
   { name: "Харчо", price: "320 ₽", emoji: "🍲" },
   { name: "Сациви", price: "360 ₽", emoji: "🍗" },
+  { name: "Бурито по-грузински", price: "350 ₽", emoji: "🌯" },
 ];
 
 const advantages = [
