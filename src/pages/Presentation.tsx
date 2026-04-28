@@ -150,7 +150,7 @@ export default function Presentation() {
 
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: "Открытие", value: "2025 год" },
+                  { label: "Открытие", value: "2026 год" },
                   { label: "Кухня", value: "Грузинская" },
                   { label: "Формат", value: "Фуд-корт / QSR" },
                   { label: "Режим работы", value: "Ежедн. 10–22" },
